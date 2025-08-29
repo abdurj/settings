@@ -1,4 +1,4 @@
-// Various VSCode Keybindings
+// Place your key bindings in this file to override the defaults
 [
     {
         "key": "alt+cmd+left",
@@ -81,7 +81,7 @@
         "command": "-metaGo.gotoSmart"
     },
     {
-        "key": "ctrl+backspace",
+        "key": "ctrl+d",
         "command": "metaGo.metaJump.deleteToSmart",
         "when": "editorTextFocus"
     },
@@ -144,6 +144,16 @@
         "when": "textInputFocus"
     },
     {
+        "key": "ctrl+shift+k",
+        "command": "editorScroll",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 10
+        },
+        "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl+pageup",
         "command": "-scrollLineUp",
         "when": "textInputFocus"
@@ -152,6 +162,16 @@
         "key": "ctrl+j",
         "command": "scrollLineDown",
         "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "editorScroll",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 10
+        },
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+pagedown",
@@ -183,5 +203,10 @@
     {
         "key": "cmd+k cmd+right",
         "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-deleteRight",
+        "when": "textInputFocus"
     },
 ]
